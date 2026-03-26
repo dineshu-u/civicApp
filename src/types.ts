@@ -2,7 +2,20 @@
 // DIGITAL GRIEVANCE - TYPE DEFINITIONS
 // ============================================
 
-export type ComplaintCategory = 'pothole' | 'garbage' | 'streetlight' | 'drainage' | 'road_damage' | 'water_leak' | 'other';
+export type ComplaintCategory =
+  | 'pothole'
+  | 'garbage'
+  | 'streetlight'
+  | 'drainage'
+  | 'road_damage'
+  | 'water_leak'
+  | 'illegal_parking'
+  | 'tree_fall'
+  | 'encroachment'
+  | 'noise_pollution'
+  | 'air_pollution'
+  | 'stray_animals'
+  | 'other';
 
 export type ComplaintStatus = 'submitted' | 'under_review' | 'assigned' | 'in_progress' | 'resolved' | 'rejected';
 
@@ -264,6 +277,12 @@ export const CATEGORY_CONFIG: Record<ComplaintCategory, { value: ComplaintCatego
   drainage: { value: 'drainage', label: 'Drainage', icon: '🌊', color: '#06B6D4' },
   road_damage: { value: 'road_damage', label: 'Road Damage', icon: '🚧', color: '#EC4899' },
   water_leak: { value: 'water_leak', label: 'Water Leak', icon: '💧', color: '#3B82F6' },
+  illegal_parking: { value: 'illegal_parking', label: 'Illegal Parking', icon: '🚗', color: '#F97316' },
+  tree_fall: { value: 'tree_fall', label: 'Tree Fall', icon: '🌳', color: '#84CC16' },
+  encroachment: { value: 'encroachment', label: 'Encroachment', icon: '🏚️', color: '#A78BFA' },
+  noise_pollution: { value: 'noise_pollution', label: 'Noise Pollution', icon: '🔊', color: '#FB923C' },
+  air_pollution: { value: 'air_pollution', label: 'Air Pollution', icon: '💨', color: '#94A3B8' },
+  stray_animals: { value: 'stray_animals', label: 'Stray Animals', icon: '🐕', color: '#D97706' },
   other: { value: 'other', label: 'Other', icon: '📋', color: '#8B5CF6' },
 };
 
